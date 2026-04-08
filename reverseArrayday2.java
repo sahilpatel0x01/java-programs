@@ -7,17 +7,14 @@ class reverseArrayday2{
        // lenghth 9 
        //indexMax = 8
 
-        // reverceArray(testArr);
-        System.out.println(Arrays.toString(reverceArray(testArr)));
+        System.out.println(Arrays.toString(reverseArray(testArr)));
         
     }
-    public static int [] reverceArray(int [] arr){
+    public static int [] reverseArray(int [] arr){
         for (int i =0; i< arr.length/2; i++){
             int temp = arr[i];
             arr[i]= arr[arr.length-1-i];
             arr[arr.length-1-i] = temp;
-
-
         }
         return arr;
     }
