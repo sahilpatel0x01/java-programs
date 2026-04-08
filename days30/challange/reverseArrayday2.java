@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package days30.challange;
 
 class reverseArrayday2{
     public static void main(String []args){
@@ -6,8 +6,9 @@ class reverseArrayday2{
                         //  9,8,7,6,5,4,3,2,1
        // lenghth 9 
        //indexMax = 8
-
-        System.out.println(Arrays.toString(reverseArray(testArr)));
+        // System.out.println(Arrays.toString(reverseArray(testArr)));
+       rotateArr_day2 rotator = new rotateArr_day2();
+       rotator.rightSideRotator(testArr);
         
     }
     public static int [] reverseArray(int [] arr){
