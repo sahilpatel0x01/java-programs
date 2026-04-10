@@ -1,15 +1,40 @@
 package days30.challange;
 
-class reverseArrayday2{
+class MainClassForAllArrays{
     public static void main(String []args){
-       int [] testArr = {1,2,3,4,5,6,7,8,9};
+       int [] testArr = {5,4,66,44,56,54,7,66};
                         //  9,8,7,6,5,4,3,2,1
        // lenghth 9 
        //indexMax = 8
         // System.out.println(Arrays.toString(reverseArray(testArr)));
        rotateArr_day2 rotator = new rotateArr_day2();
-       rotator.rightSideRotator(testArr);
+    //    rotator.rightSideRotator(testArr);
+       arraySort sorter = new arraySort();
+       sorter.sort(testArr);
         
+       //duplicates topic 
+       duplicates dup = new duplicates();
+       dup.duplicates(testArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     public static int [] reverseArray(int [] arr){
         for (int i =0; i< arr.length/2; i++){
