@@ -9,5 +9,15 @@ its 4/11 /26
 and here we are continuing on the next topic 
 * duplicates
 * prefix sum
+dropping prefix sum because i tried it already 
+formula :
+left side or lowest index considered as left side assumes its L 
+and 
+right side or highest index considered as right side assumes its R
+so 
+sum of a sub array "notPrefixedArray" from index L to index R is
+# sumof(L,R)= indexOfPrefixedSumArray[R]-indexPrefixedSumArray[L-1]
+
+
 
     
