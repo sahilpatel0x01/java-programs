@@ -16,7 +16,10 @@ and
 right side or highest index considered as right side assumes its R
 so 
 sum of a sub array "notPrefixedArray" from index L to index R is
-# sumof(L,R)= indexOfPrefixedSumArray[R]-indexPrefixedSumArray[L-1]
+*    sumof(L,R)= indexOfPrefixedSumArray[R]-indexPrefixedSumArray[L-1]
+
+
+ps .the carlnMark is nothing but me and created this account just for my openclaw setup to push all the working directory files to the github using cron job. and i used the same account to push the files on gh by mistake
 
 
 
