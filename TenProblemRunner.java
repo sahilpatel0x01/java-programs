@@ -1,11 +1,42 @@
 import java.util.Arrays;
+import days30.arrays10problem.*;
+
 
 import days30.*;
-import days30.arrays10problem.runsum;
 public class TenProblemRunner {
+    // @SuppressWarnings("unused")
     public static void main(String[] args) {
         int []arr = {1,2,3,4};
-        runsum Run = new runsum();
-        System.out.println(Arrays.toString(Run.solution(arr, 2,1)));
+        int []longArr = {
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  11, 2, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+  31, 32, 33, 34, 35895, 36, 37, 38, 39, 40,
+  41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+  51, 52, 53, 54, 55, 56, 57, 58, 59859, 60,
+  61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+  71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+  81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
+  91, 92, 93, 94, 95, 96, 97, 98, 99, 100
+        };
+ int [] anotherArray = {
+  420, 16, 51, 35, 392, 946, 213, 884, 542, 362, 892, 561, 378, 482, 121, 
+  807, 653, 58, 762, 930, 128666, 495, 891, 626, 149, 647, 816, 831, 707, 503, 
+  740, 259, 757, 569, 867, 983, 998, 202, 369, 968, 568, 298, 368, 13, 984, 
+  645, 985, 407, 587, 546, 261, 535, 147, 552, 300, 861, 904, 486, 63, 383, 
+  866, 373, 964, 638, 215, 172985, 990, 9, 950, 207, 566, 758, 866, 37, 577, 
+  693, 626, 617, 908, 596, 582, 741, 878, 957, 233, 82, 358, 336, 333, 311, 
+  330, 833, 992, 774, 94, 983, 448, 999, 388, 224
+ };
+
+        // runsum Run = new runsum();
+        // System.out.println(Arrays.toString(Run.solution(arr, 2,1)));
+
+        MaxMinOneScan mmos = new MaxMinOneScan();
+        // mmos.WithoutIntegerClass(longArr);
+        mmos.WithoutIntegerClass(anotherArray);
+
+
+       
     }
 }
