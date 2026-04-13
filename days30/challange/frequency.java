@@ -1,6 +1,6 @@
 package days30.challange;
 
-class Frequency {
+public class Frequency {
 
     public void dupCounter(int[] arr) {
 

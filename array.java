@@ -1,80 +1,53 @@
-import java.util.Arrays;
-class array {
-    public static void main(String[] args) {
-        System.out.println("start");
-       //learining array 
-    //    array();
-       double []anotherArr = new double[100];
-    //    arrayFiller(anotherArr);
-
-    System.out.println(Arrays.toString(sortArr(arrayFiller(anotherArr))) );
-   
-    }
-
-    public static double[] arrayFiller(double []anotherArr){
-        double[] randomNums = new double[anotherArr.length];
-
-            for(int i=0; i!= anotherArr.length;i++){
-                double funRandom = Math.random();
-                anotherArr[i]= (int)(funRandom*1000);
-                //saving all random int gen in one arr;
-                randomNums[i]= funRandom;
-               
-                
-
-            } 
-             saveArr(randomNums);
-        return anotherArr;
-    }
-    // private static void array(){
-    //     System.out.println("array start");
-    //     int[] arr = {1,11,111,2,22,222,3,33,333};
-    //      System.out.println("inputed arr "+ Arrays.toString(arr));
-    //     int sum =0;
-    //     for(int numbers: arr){
-    //         System.out.println(numbers);
-    //         sum+=numbers;
-    //     }
-    //     System.out.println(sum);
-    //     //  sortArr(arr);
-    //     System.out.println("main function arr "+Arrays.toString(sortArr(arr)));
 
 
+import days30.challange.*;
 
-    // }
-    public static double[] sortArr(double arr[]){
-        double temp;
+
+public class Array{
+    public static void main(String []args){
+       int [] testArr = {5,4,66,44,56,54,7,66, 66,5,4,66,58,56,57,7,7,7};
+                        //  9,8,7,6,5,4,3,2,1
+       // lenghth 9 
+       //indexMax = 8
+        // System.out.println(Arrays.toString(reverseArray(testArr)));
+       rotateArr_day2 rotator = new rotateArr_day2();
+    //    rotator.rightSideRotator(testArr);
+       arraySort sorter = new arraySort();
+       sorter.sort(testArr);
         
-        // int [] sortedArr= new int[arr.length];
-        int a=0;
-        while(a<arr.length){
-        for(int i=0; i<arr.length-1;i++){
-            temp =arr[i];
-           try{
-            if (arr[i]> arr[i+1]) {
-                arr[i]= arr[i+1];
-                arr[i+1]= temp; 
-                
-            }
-        }catch(Exception e){
-            System.out.println(e);
+       //duplicates topic 
+       duplicates dup = new duplicates();
+    //    dup.duplicates(testArr);
+    Frequency freq = new Frequency();
+    freq.dupCounter(testArr);
 
-        }
-        }
-        a++;
-        // System.out.println("in while loop arr "+ Arrays.toString(arr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-        
-        //  System.out.println("while loop ending arr  "+ Arrays.toString(arr));
+    public static int [] reverseArray(int [] arr){
+        for (int i =0; i< arr.length/2; i++){
+            int temp = arr[i];
+            arr[i]= arr[arr.length-1-i];
+            arr[arr.length-1-i] = temp;
+        }
         return arr;
-
     }
-static void saveArr(double []arr){
-    
-    System.out.println( "this is saved arr of random num gen "+ (Arrays.toString(arr)));
-
-    
-}
-
 }
